@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!-- ctrl + / (команда для комментария)-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ссылка на стили(наверное навбара) -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <!-- ссылка на мой стиль css для фотки -->
+    <link rel="icon" href="../фотки для сайта/WZebzrEORT82.png">
+    <link rel="stylesheet" href="../css/styles/mycss.css">
+    <title>Официальный сайт ФК «Селтик Шатура»</title>
+</head>
+<body>
+<!-- Это навигационная модель-->
+      <div class="nava">
+        <div id="img-conteiner">
+        <img id="fon" src="https://sun9-3.userapi.com/impf/c844722/v844722510/44e/uzy5asWTYRk.jpg?size=2500x1662&quality=96&sign=0ae2c3cee0cbcb0e7a24128e5542e2ac&type=album" id="club-img" alt="problem" style="object-fit: cover; width: 100%; height: 100%;">
+        </div>
+        <div class="b-example-divider">
+      <div class="navbar-brand" >
+        <svg width="60" height="60">
+          <a href="main_menu.html">
+        <image href="../фотки для сайта/WZebzrEORT8.png" height="100%" width="100%" preserveAspectRatio="xMidYMid slice" />
+      </svg>
+        </a>
+      </div>
+      <div class="menu">
+      <button class="burger">&#9776</button>
+      <div class="list">
+        <a href="main_menu.html">Клуб</a>
+        <a href="main_menu.html">Статистика</a>
+      </div>
+    </div>
+      <div class="apps">
+        <!-- <a href="https://vk.com/celtic_shatura" class="vk" target="_blank" rel="nofollow" title="Вконтакте"></a> -->
+        <a href="#" class="vk"  rel="nofollow" title="Вконтакте"></a>
+        <!-- <a href="" class="youtube" target="_blank" rel="nofollow" title="YouTube"></a> -->
+        <a href="#" class="youtube" rel="nofollow" title="YouTube"></a>
+      </div>
+      
+    </div>
+  </div>
+    <!-- ссылка на фотку в вк -->
+    <div class="match">
+      <div class="listmatch">
+      <h3>СЛЕДУЮЩАЯ ИГРА</h3>
+      <h5>ЧЕМПИОНАТ ГОРОДСКОГО ОКРУГА ШАТУРА <br/>| ТУР 10-Й | ШАТУРА, СТАДИОН «ЭНЕРГИЯ»</h5>
+      <div class="opp">
+      <img class="homeclub" src="../фотки для сайта/WZebzrEORT8.png" width="100" height="100" >
+      <h4>10 АВГУСТА 17:00</h4>
+      <img class="awayclub" src="https://avatars.mds.yandex.net/i?id=d142226c7675294ffc3802103b970d6b_l-5878076-images-thumbs&n=13"width="100" height="100" >
+    </div>
+    </div>
+    </div>
+    <div class="anons">
+    <img class="osnfon" src="https://sun9-24.userapi.com/impf/c627724/v627724593/3b32c/P7ZHr1b_cfE.jpg?size=2160x2160&quality=96&sign=bb8b5c29ede14d74591db3c74a3547bb&type=album" alt="problem">
+    </div>
+    <div class="btn-up btn-up_hide"></div>
+    <script>const btnUp = {
+      el: document.querySelector('.btn-up'),
+      show() {
+        // удалим у кнопки класс btn-up_hide
+        this.el.classList.remove('btn-up_hide');
+      },
+      hide() {
+        // добавим к кнопке класс btn-up_hide
+        this.el.classList.add('btn-up_hide');
+      },
+      addEventListener() {
+        // при прокрутке содержимого страницы
+        window.addEventListener('scroll', () => {
+          // определяем величину прокрутки
+          const scrollY = window.scrollY || document.documentElement.scrollTop;
+          // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+          scrollY > 400 ? this.show() : this.hide();
+        });
+        // при нажатии на кнопку .btn-up
+        document.querySelector('.btn-up').onclick = () => {
+          // переместим в начало страницы
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          });
+        }
+      }
+    }
+    btnUp.addEventListener();
+    </script>
+    <!-- подключаем jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- подключаем скрипт изменения картинок -->
+    <script src="../javascript/javasc1.js"></script>
+    <script src="../javascript/javasc2.js"></script>
+    <!-- <script>src="../Typescript/tp1.js"</script> -->
+  </body>
+</html>
