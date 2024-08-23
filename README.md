@@ -1,4 +1,4 @@
-# Prototype_web_site
+# prototype_web_site
 Прототип футбольного адаптивного веб-сайта (HTML/CSS/JavaScript) (mail: serezha.kiryanov.00@mail.ru)
 
 Предоставляю отдельные файлы веб-сайта, а также архив файлов, включающие фотографии, чтобы все хорошо работало.  
