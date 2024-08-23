@@ -1,0 +1,350 @@
+    html,body{
+        height: 100%;
+/* background: linear-gradient(green,white); */
+    }
+    
+    .nava {
+        display: block;
+        /* position:absolute; */
+        top:0px;
+        left:0px;
+    }
+    
+    /* фоновое изображение  */
+    #fon { 
+        /* position: absolute; */
+    max-width: 100%; 
+    height: auto;
+    left: 0;
+    filter: brightness(80%) 
+    }
+    /* полупрозрачная панель */
+    .b-example-divider {
+        display: flex;
+        width: 100%;
+        height: 5em;
+        background-color: rgba(255, 255, 255, 0.135);
+        /* border: solid rgba(0, 0, 0, .15); */
+        border-width: 1px 0;
+        /* box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15); */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    /* позиция логотипа */
+    .navbar-brand {
+        display: flex;
+        padding: 1em;
+        top: 0;
+        left: 0;
+    }
+
+    .list{
+        display: flex;
+        padding: 0.1em;
+    }
+
+    .list a {
+        display: block;
+        padding: 1.2em;
+        text-decoration:none;
+        text-shadow: 
+        0 0 2px green,
+        0 0 2px green,
+        0 0 2px green;
+        color: aliceblue;
+        cursor: pointer;
+        font-size: 1.5em;
+    }
+
+    .burger {
+        display: none;
+    }
+
+@media (max-width: 1000px) {
+    .burger {
+        font-size: 2em;
+        padding: 0.75em;
+        padding-inline: 10px;
+        padding-bottom: 10px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        color: aliceblue;
+        text-shadow: 
+        0 0 2px green,
+        0 0 2px green,
+        0 0 2px green;
+        display: block;
+        cursor: pointer;
+    }
+    .list {
+        display: none;
+    }
+    .list a {
+        padding: 1em;
+    }
+    
+    .menu:hover .list{
+    display: block;
+    position: absolute;
+    top: 5em; 
+    left:0px;
+    background-color: rgba(250, 250, 250, 0.135);
+    }
+}
+
+    .b-example-divider .apps a{
+        display: flex;
+        margin-left: 10px;
+        right: 20px;
+        padding: 1em;
+        position: relative;
+        top: 30px;
+        /* width: 5px;
+        height: 5px;  */
+    }
+
+    .apps a.vk {
+        /* width: 3em; */
+        background-image: url(https://fckrasnodar.ru/i/i.social_vk.svg);
+        background-color: rgba(255, 98, 7, 0.75);
+        /* filter: grayscale(1); */
+         filter: invert(1); 
+    }
+
+    .apps a.youtube {
+        background-image: url(https://fckrasnodar.ru/i/i.social_youtube.svg);
+        background-color: rgba(7, 201, 255, 0.75);
+         filter: invert(1); 
+    } 
+
+    .apps a {
+        border-radius: 50%;
+        background: #ffffff00 no-repeat 50% 50%;
+        width: 0.1em;
+        height: 0.1em;
+    }
+
+    .apps {
+        display: flex;
+        margin-left:auto;
+    }
+
+    @media (max-width: 1000px) {
+        .b-example-divider .apps a{
+            display: flex;
+            margin-left: 10px;
+            right: 20px;
+            padding: 1em;
+            position: relative;
+            top: 30px;
+            /* width: 5px;
+            height: 5px;  */
+        }
+
+        .apps a {
+            border-radius: 50%;
+            background: #ffffff00 no-repeat 50% 50%;
+            width: 0.1em;
+            height: 0.1em;
+        }
+    }
+
+    .anons {
+        display: block;
+        position: relative;
+        /* top: 30em;  */
+        left: 0;
+        z-index: -1;
+        bottom: 2rem;
+    } 
+
+    .osnfon {
+        max-width:100%;
+        height:auto;
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        
+         /* object-fit:none;  */
+        /* margin; */
+    }
+
+    .match {
+        display: block;
+        position: relative;
+        /* top: 18em; */
+        left: 0;
+    }
+
+    .listmatch{
+        text-align: center;
+    }
+
+    .homeclub {
+        position: relative;
+        display: flex;
+        margin-right: auto;
+    }
+
+    .opp {
+        display: flex;
+        text-align: center;
+    }
+    .awayclub {
+        position: relative;
+        display: flex;
+        margin-left:auto;
+        max-height: 100%;
+    }
+    @media (width< 500px){
+    .listmatch h4 {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        font-size: large;
+    }
+
+    .listmatch h3 {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .listmatch h5 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+@media (width> 1000px){
+    .listmatch h4 {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        font-size: large;
+        font-size: 3rem;
+    }
+
+    .listmatch h3 {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 3rem;
+    }
+
+    .listmatch h5 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+    }
+    .homeclub {
+        position: relative;
+        display: flex;
+        margin-right: auto;
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .opp {
+        display: flex;
+        text-align: center;
+    }
+    .awayclub {
+        position: relative;
+        display: flex;
+        margin-left:auto;
+        width: 14rem;
+        height: 14rem;
+    }
+}
+@media (width< 1000px) and (width>500px){
+    .listmatch h4 {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        font-size: large;
+        font-size: 3rem;
+    }
+
+    .listmatch h3 {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 2rem;
+    }
+
+    .listmatch h5 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+    }
+    .homeclub {
+        position: relative;
+        display: flex;
+        margin-right: auto;
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .opp {
+        display: flex;
+        text-align: center;
+    }
+    .awayclub {
+        position: relative;
+        display: flex;
+        margin-left:auto;
+        width: 9rem;
+        height: 9rem;
+    }
+}
+
+/* кнопка вверх */
+.btn-up {
+    /* фиксированное позиционирование */
+    position: fixed;
+    /* цвет фона */
+    background-color: #2c8313;
+    /* расстояние от правого края окна браузера */
+    right: 1rem;
+    /* расстояние от нижнего края окна браузера */
+    bottom: 2rem;
+    /* скругление верхнего левого угла */
+    border-top-left-radius: 8px;
+    /* скругление верхнего правого угла */
+    border-top-right-radius: 8px;
+        /* скругление верхнего левого угла */
+    border-bottom-left-radius: 8px;
+        /* скругление верхнего правого угла */
+    border-bottom-right-radius: 8px;
+    /* вид курсора */
+    cursor: pointer;
+    /* отображение элемента как flex */
+    display: flex;
+    /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+    align-items: center;
+    /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+    justify-content: center;
+    /* ширина элемента */
+    width: 60px;
+    /* высота элемента */
+    height: 50px;
+  }
+  
+  .btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+  }
+  
+  .btn-up_hide {
+    display: none;
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: #2c8313; /* цвет заднего фона при наведении */
+    }
+  }
+/* .b-example-divider{
+    justify-content: space-between;
+} */
+
+/* body{
+
+} */
